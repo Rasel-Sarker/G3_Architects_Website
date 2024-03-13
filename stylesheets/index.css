@@ -1,6 +1,129 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+/* shared styles */
 * {
    margin: 0;
    padding: 0;
    font-family: "Work Sans", sans-serif;
+}
+
+a {
+   text-decoration: none;
+}
+/* header css part */
+header {
+   background: rgba(255, 144, 14, 0.1);
+   padding: 50px 225px;
+}
+nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 100px;
+}
+.nav_title {
+   color: #131313;
+   font-size: 1.9rem;
+   font-weight: 700;
+}
+nav > ul {
+   display: flex;
+   gap: 20px;
+}
+nav li {
+   list-style: none;
+}
+nav li a {
+   color: #424242;
+   font-size: 1.2rem;
+   font-weight: 500;
+   line-height: 144.444%;
+}
+/* banner part css */
+.banner_text {
+   max-width: 80%;
+   margin: 0 auto;
+   margin-top: 115px;
+}
+.banner_title {
+   color: #131313;
+   font-size: 3rem;
+   font-weight: 700;
+   text-align: center;
+}
+.banner_description {
+   color: #727272;
+   font-weight: 400;
+   line-height: 162.5%;
+   text-align: center;
+   margin-bottom: 15px;
+}
+/* banner image */
+.banner_image {
+   margin-top: 3rem;
+}
+.banner_image img {
+   width: 100%;
+}
+/* button primary */
+.btn_primary a {
+   color: #fff;
+   text-align: center;
+   font-size: 1.2rem;
+   font-weight: 600;
+}
+.btn_primary {
+   display: block;
+   border-radius: 8px;
+   background: #ff900e;
+   border: 0;
+   padding: 1rem 1.3rem;
+   margin: 0 auto;
+}
+/* Responsive css */
+/* mobile devices */
+@media screen and (max-width: 576px) {
+   .line_break {
+      visibility: hidden;
+   }
+   header {
+      padding: 20px 50px;
+   }
+   nav {
+      flex-direction: column;
+      gap: 20px;
+   }
+   .banner_text {
+      margin-top: 30px;
+      max-width: 90%;
+   }
+   .banner_title {
+      font-size: 2rem;
+      margin-bottom: 15px;
+   }
+   nav > ul {
+      flex-wrap: wrap;
+   }
+}
+/* medium devices */
+@media screen and (min-width: 576px) and (max-width: 1000px) {
+   .line_break {
+      visibility: hidden;
+   }
+   header {
+      padding: 30px 50px;
+   }
+   .banner_text {
+      margin-top: 30px;
+      max-width: 90%;
+   }
+   .banner_title {
+      font-size: 2rem;
+      margin-bottom: 15px;
+   }
+   nav {
+      gap: 50px;
+   }
+   nav > ul {
+      flex-wrap: wrap;
+   }
 }
