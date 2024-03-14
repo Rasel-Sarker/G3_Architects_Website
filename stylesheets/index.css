@@ -3,6 +3,7 @@
 * {
    margin: 0;
    padding: 0;
+   box-sizing: border-box;
    font-family: "Work Sans", sans-serif;
 }
 
@@ -70,6 +71,8 @@ nav li a {
    text-align: center;
    font-size: 1.2rem;
    font-weight: 600;
+   width: 100%;
+   height: 100%;
 }
 .btn_primary {
    display: block;
@@ -78,6 +81,50 @@ nav li a {
    border: 0;
    padding: 1rem 1.3rem;
    margin: 0 auto;
+   cursor: pointer;
+}
+/* main section css */
+main {
+   max-width: 1440px;
+   margin: 0 auto;
+   background: #fff;
+}
+/* team feature */
+.team_feature {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 2rem;
+}
+/* team feature image */
+.team_feature_image_container {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 1.2rem;
+}
+/* team_feature_text */
+.team_feature_text {
+   padding-left: 3rem;
+   text-align: left;
+}
+.team_feature_text_title {
+   color: #727272;
+   font-size: 2.5rem;
+   font-weight: 500;
+}
+.text_list {
+}
+.text_our {
+   color: #131313;
+}
+.text_feature {
+   color: #ff900e;
+}
+.team_feature_text_description {
+   margin: 1.2rem 0 2rem 0;
+}
+.team_feature_btn {
+   margin: 0 0;
 }
 /* Responsive css */
 /* mobile devices */
@@ -103,6 +150,32 @@ nav li a {
    nav > ul {
       flex-wrap: wrap;
    }
+   /* team feature section css */
+   .team_feature {
+      flex-direction: column-reverse;
+      align-items: normal;
+      justify-content: center;
+      padding: 2rem;
+   }
+   .team_feature_text_title {
+      font-size: 2rem;
+   }
+   .team_feature_text {
+      padding-left: 0;
+      text-align: center;
+   }
+   .team_feature_image_container {
+      margin-top: 20px;
+   }
+   .team_feature_image_container img {
+      width: 100%;
+   }
+   .team_feature_btn {
+      margin: 0 auto;
+   }
+   .team_feature_image_container {
+      grid-template-columns: 1fr;
+   }
 }
 /* medium devices */
 @media screen and (min-width: 576px) and (max-width: 1000px) {
@@ -125,5 +198,23 @@ nav li a {
    }
    nav > ul {
       flex-wrap: wrap;
+   }
+   /* team feature section css */
+   .team_feature {
+      flex-direction: column-reverse;
+      padding: 20px 30px;
+   }
+   .team_feature_text_title {
+      font-size: 2rem;
+   }
+   .team_feature_image_container {
+      margin-top: 20px;
+      width: 100%;
+   }
+   .team_feature_image_container img {
+      width: 100%;
+   }
+   .team_feature_btn {
+      margin: 0 auto;
    }
 }
